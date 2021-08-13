@@ -38,7 +38,7 @@
 
 .caard {
   width: 300px;
-  height: 200px;
+  height: 250px;
   border-radius: 8px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   text-align: center;
@@ -215,15 +215,16 @@ h3 {
   justify-content: center; }
 
 .caja {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center; }
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  border: 1px solid;
+  border-radius: 5px; }
 
 .trabajos {
   margin: 10px;
   padding: 10px;
-  background-color: #224858;
+  background-color: #343a40;
   transition: all 0.25s; }
 
 .trabajos:hover {
@@ -240,12 +241,7 @@ h3 {
 input {
   width: 100%;
   height: 45px;
-  margin: 10px 0px;
-  transition: all 1s; }
-
-input:focus {
-  height: 50px;
-  font-size: 20px; }
+  margin: 10px 0px; }
 
 .form__tilde {
   height: 20px; }
@@ -278,6 +274,34 @@ textarea {
 #seccionIndexDos ul li {
   font-size: 25px;
   margin-top: 20px; }
+
+.containerBody {
+  background-color: #4d545a;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.container-404 {
+  text-align: center;
+  width: 100%;
+  background-color: white;
+  padding: 20px;
+  max-width: 400px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  line-height: 1.7; }
+
+.boton {
+  display: inline-block;
+  margin-top: 15px;
+  text-decoration: none;
+  background-color: #4d545a;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px; }
+
+.boton:hover {
+  background-color: #343a40; }
 
 @media only screen and (min-width: 480px) {
   #grillaIndex {
@@ -321,7 +345,7 @@ textarea {
   #grillaProductos {
     display: grid;
     grid-template-areas: "header" "productosUno " "productosDos" "productosTres" "productosCuatro" "footer";
-    grid-template-rows: 130px 130px 580px 180px auto; }
+    grid-template-rows: 130px 200px 800px 500px 180px auto; }
   #grillaNosotros {
     display: grid;
     grid-template-areas: "header" "nosotrosUno" "nosotrosDos" "footer";
@@ -331,8 +355,7 @@ textarea {
     grid-template-areas: "header" "contactosUno" "contactosDos" "footer";
     grid-template-rows: 100px 200px 580px auto; }
   h1 {
-    font-size: 40px;
-    /* color: white; */ }
+    font-size: 40px; }
   p {
     font-size: 25px; }
   h3 {
