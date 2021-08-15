@@ -22,6 +22,7 @@
 }
 .paadre{
     display: flex;
+    flex-direction: column;
 }
 .containeer{
     width: 100%;
@@ -129,7 +130,7 @@ aside{
     "productosTres"
     "productosCuatro"
     "footer";
-    grid-template-rows: 250px 200px 500px 550px 150px auto;
+    grid-template-rows: auto 260px 600px 450px 200px auto;
 }
 /* ----------- NOSOTROS ------------- */
 .nosotrosUno{
@@ -145,7 +146,7 @@ aside{
     "nosotrosUno"
     "nosotrosDos"
     "footer";
-    grid-template-rows: 280px 1300px 600px auto;
+    grid-template-rows: auto 1850px 1200px auto;
 }
 /* ----------- CONTACTO ------------- */
 #contactosUno{
@@ -164,7 +165,7 @@ aside{
     "contactosUno"
     "contactosDos"
     "footer";
-    grid-template-rows: 320px 300px 560px auto;
+    grid-template-rows: auto 450px 600px auto;
 }
 .border {
     border: 1px solid black;
@@ -206,7 +207,7 @@ a{
     font-weight: bold;
     color: white;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
 }
 a:hover{
     text-decoration: underline;
@@ -338,7 +339,7 @@ textarea{
         "productosTres"
         "productosCuatro"
         "footer";
-        grid-template-rows: 120px 100px 450px 500px 100px auto;
+        grid-template-rows: auto 100px 600px 400px 100px auto;
     }
     #grillaNosotros{
         display: grid;
@@ -347,7 +348,7 @@ textarea{
         "nosotrosUno"
         "nosotrosDos"
         "footer";
-        grid-template-rows: 110px 750px 500px auto;
+        grid-template-rows: auto 850px 300px auto;
     }
     #grillaContacto{
         display: grid;
@@ -356,10 +357,13 @@ textarea{
         "contactosUno"
         "contactosDos"
         "footer";
-        grid-template-rows: 120px 200px 560px auto;
+        grid-template-rows: auto 250px 600px auto;
     }
     h1{
         font-size: 30px;
+    }
+    .letraNosotros{
+        font-size: 25px;
     }
     p{
         font-size: 20px;
@@ -374,12 +378,16 @@ textarea{
         display: inline-block;
     }
     a{
-        font-size: 12px;
+        font-size: 15px;
     }
     iframe{
         width: 100%; 
     }
     .caja{
+        flex-direction: row;
+    }
+    .paadre{
+        display: flex;
         flex-direction: row;
     }
 }
@@ -403,7 +411,7 @@ textarea{
         "productosTres"
         "productosCuatro"
         "footer";
-        grid-template-rows: 130px 200px 800px 500px 180px auto;
+        grid-template-rows: auto 80px 600px 400px 150px auto;
     }
     #grillaNosotros{
         display: grid;
@@ -412,7 +420,7 @@ textarea{
         "nosotrosUno"
         "nosotrosDos"
         "footer";
-        grid-template-rows: 130px 730px 280px auto;
+        grid-template-rows: auto 850px 280px auto;
     }
     #grillaContacto{
         display: grid;
@@ -421,7 +429,7 @@ textarea{
         "contactosUno"
         "contactosDos"
         "footer";
-        grid-template-rows: 100px 200px 580px auto;
+        grid-template-rows: auto 300px 580px auto;
     }
     h1{
         font-size: 40px;
@@ -441,6 +449,10 @@ textarea{
     .caja{
         flex-direction: column;
     }
+    .paadre{
+        display: flex;
+        flex-direction: row;
+    }
 }
 @media only screen and (min-width: 1700px){
 #grillaIndex{
@@ -451,6 +463,6 @@ textarea{
     "indexDos"
     "indexTres"
     "footer";
-    grid-template-rows: auto 1000px 250px 550px auto;
+    grid-template-rows: auto 950px 250px 550px auto;
     }
 }
